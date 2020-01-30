@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  mocker_api_test:
+    image: node:alpine
+    environment:
+      - PATH=$PATH:/home/node/app/node_modules/.bin
+    working_dir: /home/node/app
+    command: "npm run start:mock"
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - ${PORTMOCKER}:${PORTMOCKER}

@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "before": true,
+    "test": true,
+    "expect": true,
+    "context": true,
+    "describe": true,
+    "xdescribe": true,
+    "it": true,
+    "fetch": true,
+    "Headers": true,
+    "browser": true,
+    "beforeEach": true
+  },
+  "rules": {
+    "no-console": "warn"
+  },
+  "parser": "babel-eslint"
+}

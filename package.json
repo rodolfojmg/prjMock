@@ -1,0 +1,36 @@
+{
+  "name": "prjmock",
+  "version": "1.0.0",
+  "description": "Projeto para ajudar no desenvolvimento de atividades onde dependem de um retorno mockado",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js",
+    "start:mock": "nodemon src/index.js",
+    "start:docker": "docker-compose up -d",
+    "stop:docker": "docker-compose down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodolfojmg/prjMock.git"
+  },
+  "author": "Rodolfo Gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodolfojmg/prjMock/issues"
+  },
+  "homepage": "https://github.com/rodolfojmg/prjMock#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "chalk": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^8.0.6",
+    "koa-xml-body": "^2.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
